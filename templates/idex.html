@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Dojo Survey</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dojo Survey</h1>
+        <form action='/results' method='post'>
+            <div class="formName">
+                Your Name: <input type="text" name='name' class="form-control" id="exampleFormControlInput1"
+                    placeholder="Your name">
+            </div>
+            <div class="formLocation">
+                Dojo Location: <select name="location" class="form-control mb-2" id="exampleFormControlSelect1">
+                    <option value="Bellevue">Bellevue, WA</option>
+                    <option value="Boise">Boise, ID</option>
+                    <option value="Chicago">Chicago, IL</option>
+                    <option value="Dallas">Dallas, TX</option>
+                    <option value="Los Angeles">Los Angeles, CA</option>
+                    <option value="Silicon Valley">Silicon Valley, CA</option>
+                </select>
+            </div>
+            <div class="formLanguage">
+                Favorite Language: <select name="language" class="form-control" id="exampleFormControlSelect1">
+                    <option value="Python">Python</option>
+                    <option value="Mern">Mern</option>
+                    <option value="Java">Java</option>
+                    <option value="C#/.Net">C#/.NET</option>
+                    <option value="Ruby">Ruby</option>
+                </select>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioChoice" id="exampleRadios1" value="onsite"
+                    checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    onsite
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioChoice" id="exampleRadios2" value="online">
+                <label class="form-check-label" for="exampleRadios2">
+                    online
+                </label>
+            </div>
+            <div class="formComment">
+                <label for="exampleFormControlTextarea1">Comments (optional):</label>
+                <textarea type="text" name="comments" class="form-control" id="exampleFormControlTextarea1"
+                    rows="3"></textarea>
+            </div>
+            <div class="submit">
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
